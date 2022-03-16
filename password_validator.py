@@ -1,16 +1,17 @@
 class PasswordValidator():
     __SPECIAL_SYMBOLS = ['$', '@', '#', '%']
     final_response = {}
+    password: str
     
-    def __init__(self, password):
+    def __init__(self, password: str):
         self.password = password
     
-    def minlength(self, length):
+    def minlength(self, length: int):
         if len(self.password) < length:
             self.final_response = ["Length less than required"]
         return self
     
-    def maxlength(self, length):
+    def maxlength(self, length: int):
         if len(self.password) > length:
             self.final_response = ["Length greater than permited"]
         return self
@@ -35,7 +36,7 @@ class PasswordValidator():
             self.final_response = ['Password should have at least one of those symbols: $@#%']
         return self
     
-    def get_response(self):
+    def get_response(self) -> dict:
         return self.final_response
  
 # a = PasswordValidator("Jujo")
