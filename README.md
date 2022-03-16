@@ -1,5 +1,5 @@
 # Password-Validator
-###Simple password-validator class
+### Simple password-validator class
 
 ```python
 variable = PasswordValidator()
