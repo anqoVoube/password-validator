@@ -9,5 +9,5 @@ variable\
 .has_uppercase()\
 .has_lowercase()\
 .has_digit()\
-.has_specific_symbols
+.has_specific_symbols()
 ```
