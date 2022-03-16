@@ -3,7 +3,7 @@ class PasswordValidator:
     final_response = {}
     password: str
     
-    def __init__(self, password):
+    def __init__(self, password: str):
         self.password = password
     
     def minlength(self, length: int):
