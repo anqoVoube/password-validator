@@ -1,9 +1,11 @@
-# password-validator
-Simple password-validator class
+# Password-Validator
+###Simple password-validator class
+
 ```python
 variable = PasswordValidator()
 variable\
 .minlenght(int)\
+.maxlenght(int)
 .has_uppercase()\
 .has_lowercase()\
 .has_digit()\
