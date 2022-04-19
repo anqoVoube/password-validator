@@ -47,4 +47,4 @@ class PasswordValidator:
  
 # a = PasswordValidator("Jujo")
 # print(a.minlength(5).has_lowercase().get_response())
-# -> ["Password should have at least one uppercase letter"]
+# -> {'min-length': ['Length less than required']}
